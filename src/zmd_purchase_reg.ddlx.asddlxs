@@ -1,0 +1,226 @@
+@Metadata.layer: #CORE
+annotate entity ZC_ITEM with
+{
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position: 9 }]
+  @EndUserText.label: 'Journal Entry'
+  AccountingDocument;
+
+  @UI.lineItem: [{ position: 20 }]
+  @UI.selectionField: [{ position: 10 }]
+  @EndUserText.label: 'Journal Entry Date'
+  DocumentDate;
+
+  @UI.lineItem: [{ position: 30 }]
+  @UI.selectionField: [{ position: 20 }]
+  @EndUserText.label: 'Fiscal Year'
+  FiscalYear;
+
+  @UI.lineItem: [{ position: 40 }]
+  @EndUserText.label: 'Identification of the Line Item'
+  AccountingDocumentItemType;
+
+  @UI.lineItem: [{ position: 50 }]
+  Supplier;
+
+  @UI.lineItem: [{ position: 60 }]
+  SupplierName;
+
+  @UI.lineItem: [{ position: 70 }]
+  SupplierAccountGroup;
+
+  @UI.lineItem: [{ position: 80 }]
+  @EndUserText.label: 'Supplier GST'
+  SupplierGST;
+
+  @UI.lineItem: [{ position: 90 }]
+  Product;
+
+  @UI.lineItem: [{ position: 100 }]
+  PurchasingDocument;
+
+  @UI.lineItem: [{ position: 110 }]
+  PurchasingDocumentItem;
+
+  @UI.lineItem: [{ position: 120 }]
+  Material;
+
+  @UI.lineItem: [{ position: 130 }]
+  DocumentItemText;
+
+  @UI.lineItem: [{ position: 140 }]
+  Plant;
+
+  @UI.lineItem: [{ position: 150 }]
+  OriginalReferenceDocument;
+
+  @UI.lineItem: [{ position: 160 }]
+  PostingDate;
+
+  @UI.lineItem: [{ position: 170 }]
+  FiscalPeriod;
+
+  @UI.lineItem: [{ position: 180 }]
+  AccountingDocumentType;
+
+  @UI.lineItem: [{ position: 190 }]
+  TaxAmount;
+
+  @UI.lineItem: [{ position: 200 }]
+  TransactionCurrency;
+
+  @UI.lineItem: [{ position: 210 }]
+  GLAccount;
+
+  @UI.lineItem: [{ position: 211 }]
+  GLAccountName;
+
+  @UI.lineItem: [{ position: 220 }]
+  ChartOfAccounts;
+
+  @UI.lineItem: [{ position: 230 }]
+  NetDueDate;
+
+  @UI.lineItem: [{ position: 240 }]
+  InvoiceReference;
+
+  @UI.lineItem: [{ position: 250 }]
+  IN_HSNOrSACCode;
+
+  @UI.lineItem: [{ position: 260 }]
+  BaseUnit;
+
+  @UI.lineItem: [{ position: 270 }]
+  Quantity;
+
+  @UI.lineItem: [{ position: 280 }]
+  OriginalTaxBaseAmount;
+
+  @UI.lineItem: [{ position: 290 }]
+  TaxCode;
+
+  @UI.lineItem: [{ position: 300 }]
+  InvoiceAmtInCoCodeCrcy;
+
+  @UI.lineItem: [{ position: 310 }]
+  CompanyCodeCurrency;
+
+  @UI.lineItem: [{ position: 320 }]
+  ProductDescription;
+
+  @UI.lineItem: [{ position: 330 }]
+  ProductType;
+
+  @UI.lineItem: [{ position: 340 }]
+  ProductGroup;
+
+  @UI.lineItem: [{ position: 350 }]
+  @EndUserText.label: 'Base Amount'
+  AmountInTransactionCurrency;
+
+  @UI.lineItem: [{ position: 360 }]
+  @EndUserText.label: 'Tax Amount'
+  TaxBaseAmountInTransCrcy;
+
+  @UI.lineItem: [{ position: 370 }]
+  referencedocumentfiscalyear;
+
+  @UI.lineItem: [{ position: 380 }]
+  referencedocument;
+
+  @UI.lineItem: [{ position: 390 }]
+  referencedocumentitem;
+
+  @UI.lineItem: [{ position: 400 }]
+  IncotermsClassification;
+
+  @UI.lineItem: [{ position: 410 }]
+  IncotermsLocation1;
+
+  @UI.lineItem: [{ position: 420 }]
+  PurchasingGroup;
+
+  @UI.lineItem: [{ position: 430 }]
+  PurchasingOrganization;
+
+  @UI.lineItem: [{ position: 440 }]
+  PurchaseRequisition;
+
+  @UI.lineItem: [{ position: 450 }]
+  CreationDate;
+
+  @UI.lineItem: [{ position: 460 }]
+  PurchaseRequisitionItem;
+
+  @UI.lineItem: [{ position: 470 }]
+  @EndUserText.label: 'Department'
+  YY1_DepartmentNamePR_PRI;
+
+  @UI.lineItem: [{ position: 480 }]
+  CreatedByUser;
+
+  @UI.lineItem: [{ position: 490 }]
+  MaterialTypeName;
+
+  @UI.lineItem: [{ position: 500 }]
+  ProductGroupName;
+
+  @UI.lineItem: [{ position: 510 }]
+  ProductGroupText;
+
+  @UI.lineItem: [{ position: 511 }]
+  @EndUserText.label: 'Freight Charges'
+  FreightAmount;
+
+  @UI.lineItem: [{ position: 520 }]
+  @EndUserText.label: 'SGST Rate'
+  SGST_RATE;
+
+  @UI.lineItem: [{ position: 530 }]
+  @EndUserText.label: 'CGST Rate'
+  CGST_RATE;
+
+  @UI.lineItem: [{ position: 540 }]
+  @EndUserText.label: 'IGST Rate'
+  IGST_RATE;
+
+  @UI.lineItem: [{ position: 550 }]
+  @EndUserText.label: 'CGST Amount'
+  CGST_AMT;
+
+  @UI.lineItem: [{ position: 560 }]
+  @EndUserText.label: 'SGST Amount'
+  SGST_AMT;
+
+  @UI.lineItem: [{ position: 570 }]
+  @EndUserText.label: 'IGST Amount'
+  IGST_AMT;
+
+  @UI.lineItem: [{ position: 571 }]
+  @EndUserText.label: 'Total Tax Amount'
+  TotalTax;
+
+  @UI.lineItem: [{ position: 572 }]
+  @EndUserText.label: 'TDS Amount'
+  TDSAMOUNT;
+
+  @UI.lineItem: [{ position: 573 }]
+  @EndUserText.label: 'Round Off'
+  RoundOff;
+
+  @UI.lineItem: [{ position: 574 }]
+  @EndUserText.label: 'Total Invoice'
+  TotalAmount;
+
+  @UI.lineItem: [{ position: 580 }]
+  TaxCodeName;
+
+  @UI.lineItem: [{ position: 590 }]
+  DocumentReferenceID;
+
+  @UI.lineItem: [{ position: 600 }]
+  Region;
+
+  @UI.lineItem: [{ position: 610 }]
+  BusinessPlace;
+}
